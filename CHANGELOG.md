@@ -1,10 +1,24 @@
-## master - 2016-05-01
+## 4.3.0 - 2016-09-21
+- Add ability to force rediscover via clearCache parameter (Android) [\#340](https://github.com/randdusing/cordova-plugin-bluetoothle/pull/340)
+- UUIDs are now always uppercase [\#337](https://github.com/randdusing/BluetoothLE/issues/337)
+- Fix issue with discoveredState being null on connect error, which caused NullPointerExceptions [\#342](https://github.com/randdusing/BluetoothLE/issues/342)
+- Add ability to auto connect via autoConnect parameter (Android) [\#333](https://github.com/randdusing/BluetoothLE/issues/333)
+- Update package.json engines [\#348](https://github.com/randdusing/cordova-plugin-bluetoothle/pull/348)
+
+## 4.2.1 - 2016-07-25 (Forgot GitHub release, but on NPM)
+- Fix issue with queuing getting stuck when device disconnects / closes [\#315](https://github.com/randdusing/cordova-plugin-bluetoothle/pull/315)
+
+## 4.2.0 - 2016-07-09
+- Added ability to bond/unbond on Android
+
+## 4.1.0 - 2016-07-09
 - wasConnected helper function
 - Improved subscribe with Android. No longer need to specify whether notification or indication
 - Read, write, subscribe, unsubscribe, readDescriptor, writeDescriptor queueing for Android [\#263](https://github.com/randdusing/BluetoothLE/issues/263), [\#153](https://github.com/randdusing/BluetoothLE/issues/153)
 - Everything now runs on the single WebCore thread with Android. It should prevent issues with race conditions
 - Fix issue with writeDescriptor on Android
 - Fix issue with UUID validation on iOS
+- Fix issue with undefined params obj on startScan on Android.
 
 ## 4.0.0 - 2016-03-30
 - Update OS X
